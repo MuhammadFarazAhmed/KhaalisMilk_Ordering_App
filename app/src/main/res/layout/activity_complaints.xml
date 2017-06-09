@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/settingicon" />
+
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/headerimage"
+        android:contentDescription="Image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:padding="8dp"
+        android:layout_marginBottom="0dp"
+        />
+    <View
+        android:id="@+id/horizontal_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#CCC"
+        android:layout_below="@+id/headerimage"/>
+
+
+
+    <TextView
+        android:text="Ordering App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:letterSpacing="0.075"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/horizontal_bar"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaints/Feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+     <TableLayout
+
+         android:layout_marginTop="16dp"
+         android:layout_marginBottom="8dp"
+         android:layout_below="@id/textView2"
+         android:id="@+id/complainttable"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TableRow>
+             <TextView
+                 android:text="Date"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 />
+             <TextView
+                 android:text="Message"
+                 android:layout_weight="2"
+
+                 />
+             <TextView
+                 android:text="Status"
+                 android:layout_weight="1"
+
+                 />
+         </TableRow>
+
+     </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/listviewcontainer"
+        android:layout_below="@+id/complainttable"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp">
+
+        <ListView
+
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scrollbars="vertical"
+            android:scrollbarSize="12dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_below="@id/listviewcontainer"
+        android:id="@+id/OrderNow"
+        android:text="New Message"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>

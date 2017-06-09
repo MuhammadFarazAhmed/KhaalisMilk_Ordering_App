@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/headerimage"
+        android:contentDescription="Image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:padding="8dp"
+        android:layout_marginBottom="0dp"
+        />
+    <View
+        android:id="@+id/horizontal_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#CCC"
+        android:layout_below="@+id/headerimage"/>
+
+
+
+    <TextView
+        android:text="Ordering App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:letterSpacing="0.075"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/horizontal_bar"
+        />
+    <TextView
+        android:id="@+id/settingstextview"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/groupviews"
+        android:layout_below="@id/settingstextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:clickable="true"
+            android:id="@+id/managesubscription"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Manage Subscription"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:id="@+id/manageprofiles"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Manage Profile"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/account_history"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Account History"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/complaints"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Complaints"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+    <TextView
+
+        android:layout_below="@+id/groupviews"
+        android:id="@+id/logout"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
